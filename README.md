@@ -7,3 +7,4 @@
 3. Det går inte heller att ändra ett valt fordon efter att man har lagt till det i sitt ärende, detta är gjort för att minimera risken att användare
      byter fordon utan mening. Det är inte så troligt att man efter en stund inser att det är en buss man reparerar och inte en bil. Så råkar man
      lägga till ett felaktigt fordon får man ta bort det ärendet och göra om igen.
+4. Admins Uppgifter: (Användarnamn = Bosse Lösenorde = 1)
