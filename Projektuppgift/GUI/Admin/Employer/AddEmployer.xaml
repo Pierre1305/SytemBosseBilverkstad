@@ -1,0 +1,282 @@
+﻿<Page x:Class="GUI.Admin.Employer.AddEmployer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI.Admin.Employer"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1200"
+      Title="AddEmployer">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Canvas Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Grid.ColumnSpan="3" Margin="0,0,0,0" Background="#FF2E2E2E" >
+                <Label
+                    Content="Lägg till ny anställd"
+                    FontSize="25"
+                    Foreground="White"
+                    Margin="20,0,0,0"       
+                    >
+                </Label>
+             
+
+                <StackPanel Margin="50,75,0,0" Orientation="Horizontal" >
+                    <TextBox  FontFamily="Helvetica"
+                             FontWeight="Light"
+                             Text="Namn"
+                             x:Name="firstName"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent" 
+                             BorderThickness="0"
+                             Width="150"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25" GotFocus="firstName_GotFocus"  
+                             />
+                </StackPanel>
+                <Border Margin="50,100,0,0" Width="150"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+
+                <StackPanel Orientation="Horizontal" Margin="50,125,0,0">
+                    <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                                 Text="Efternamn"
+                             x:Name="lastname"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent" 
+                             BorderThickness="0"
+                             Width="150"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25" GotFocus="lastname_GotFocus" 
+                          />
+
+                </StackPanel>
+                <Border Margin="50,150,0,0" Width="150"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+                <StackPanel Orientation="Horizontal" Margin="50,175,0,0">
+                    <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             x:Name="dateOfBirth"
+                             Text="Födelsedatum"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent" 
+                             BorderThickness="0"
+                             Width="150"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25" GotFocus="dateOfBirth_GotFocus" 
+                          />
+
+                </StackPanel>
+                <Border Margin="50,200,0,0" Width="150"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+                <StackPanel Orientation="Horizontal" Margin="50,225,0,0">
+                    <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             x:Name="dateOfEmployment"
+                             Text="Anställningdatum"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent" 
+                             BorderThickness="0"
+                             Width="150"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25" GotFocus="dateOfEmployment_GotFocus" 
+                          />
+                </StackPanel>
+                <Border Margin="50,250,0,0" Width="150"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+                <StackPanel Orientation="Horizontal" Margin="50,275,0,0">
+                    <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             x:Name="employerId"
+                             Text="Anställnings-ID"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent" 
+                             BorderThickness="0"
+                             Width="150"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25" GotFocus="employerId_GotFocus" 
+                          />
+                </StackPanel>
+                <Border Margin="50,300,0,0" Width="150"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+                <StackPanel Orientation="Horizontal" Margin="50,325,0,0">
+                    <Label FontFamily="Helvetica"
+                             FontWeight="Light"
+                             x:Name="MathPassword"
+                             Content="Kompetens"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent" 
+                             BorderThickness="0"
+                             Width="150"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="30" 
+                          />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,400,0,0">
+                    <CheckBox
+                        x:Name="Bromsar"
+                       FontFamily="Helvetica"
+                       FontWeight="Light"
+                        FontSize="18"
+                        HorizontalAlignment="Center"
+                        Content="Bromsar" 
+                        Foreground="White"
+                        Opacity="1"
+                        Height="20" Checked="Bromsar_Checked"
+                        />
+                </StackPanel>
+                <StackPanel>
+                    <CheckBox Margin="120,400,0,0"
+                                 x:Name="Tire"
+                       FontFamily="Helvetica"
+                       FontWeight="Light"
+                        FontSize="18"
+                        HorizontalAlignment="Center"
+                        Content="Däck" 
+                        Foreground="White"
+                        Opacity="1"
+                        Height="20" Checked="Tire_Checked"
+                        />
+                </StackPanel>
+                <StackPanel>
+                    <CheckBox Margin="200,400,0,0"
+                                 x:Name="vindrutor"
+                       FontFamily="Helvetica"
+                       FontWeight="Light"
+                        FontSize="18"
+                        Content="Vindrutor" 
+                        Foreground="White"
+                        Opacity="1"
+                        Height="20" Checked="vindrutor_Checked"
+                        />
+                </StackPanel>
+                <StackPanel>
+                        <CheckBox Margin="310,400,0,0"
+                                 x:Name="Motor"
+                       FontFamily="Helvetica"
+                       FontWeight="Light"
+                        FontSize="18"
+                        HorizontalAlignment="Center"
+                        Content="Motorer" 
+                        Foreground="White"
+                        Opacity="1"
+                        Height="20" Checked="Motor_Checked"
+                        />
+                </StackPanel>
+                <StackPanel>
+                        <CheckBox Margin="410,400,0,0"
+                                 x:Name="Kaross"
+                       FontFamily="Helvetica"
+                       FontWeight="Light"
+                        FontSize="18"
+                        HorizontalAlignment="Center"
+                        Content="Kaross" 
+                        Foreground="White"
+                        Opacity="1"
+                        Height="20" Checked="Kaross_Checked" 
+                        />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="75,500,0,0">
+                    <Button Style="{StaticResource buttomTheme}" Width="100" Height="30"
+                         Content="Lägg till" 
+                             FontSize="20" Click="Button_Click_7"  />
+                </StackPanel>
+
+
+
+            </Canvas>
+
+            <Canvas  Grid.RowSpan="2" Background="#FF292929"  Grid.Row="1">
+                <Label Content="   Meny"
+                           Margin="0,0,0,0"
+                           FontFamily="Helvetica"                                            
+                             FontSize="25"
+                             Foreground="White"
+                             Background="#FF4B4B4B"                          
+                             Width="150"          
+                             Opacity="1"
+                             Height="40"/>
+                <StackPanel>
+                    <Button Style="{StaticResource buttomTheme1}" Width="150" Height="30"
+                         Content="Lägg till anställd" 
+                             FontSize="15"
+                             Margin="0,60,0,0"  />
+                    <Button Style="{StaticResource buttomTheme1}" Width="150" Height="30"
+                         Content="Ändra anställd" 
+                             FontSize="15"
+                             Margin="0,10,0,0" Click="Button_Click_5"  />
+                   
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="20,500,0,0">
+                    <Button Style="{StaticResource buttomTheme}" Width="100" Height="30"
+                         Content="Logga ut" 
+                             FontSize="20" Click="Button_Click_6"   />
+                </StackPanel>
+
+            </Canvas>
+            <Canvas  Grid.RowSpan="1" Grid.ColumnSpan="3" Background="#FF343434">
+
+                <Button Style="{StaticResource buttomTheme1}" Width="150" Height="35"
+                         Content="Startsida" 
+                             FontSize="30"
+                             Margin="0,20,0,0" Click="Button_Click" />
+                <Button Style="{StaticResource buttomTheme1}" Width="150" Height="35"
+                         Content="Nyheter" 
+                             FontSize="30"
+                             Margin="200,20,0,0" Click="Button_Click_1"  />
+                <Button Style="{StaticResource buttomTheme1}" Width="150" Height="35"
+                         Content="Verkstad" 
+                             FontSize="30"
+                             Margin="400,20,0,0" Click="Button_Click_2"  />
+                <Button Style="{StaticResource buttomTheme1}" Width="150" Height="35"
+                         Content="Anställda" 
+                             FontSize="30"
+                             Margin="600,20,0,0" Click="Button_Click_3"  />
+                <Button Style="{StaticResource buttomTheme1}" Width="210" Height="35"
+                         Content="Användare"
+                             FontSize="30"
+                             Margin="800,20,0,0" Click="Button_Click_4"/>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Page>
